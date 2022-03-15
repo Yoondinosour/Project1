@@ -53,7 +53,7 @@ body{
     margin: 0 auto;
 }
 
-h1{
+.search_wrap h1{
     font-size: 30px;
     margin-bottom: 20px;
     padding: 50px 0 15px 0;
