@@ -127,7 +127,7 @@ a:visited{
     width: 410px;
     top: 30px;
     border: 1px solid rgba(0,0,0,.1);
-    box-shadow: 0px 5px 5px 1px rgb(35 52 71 / 12%);
+    box-shadow: 0px 5px 5px 1px rgba(35,52,71,.12);
     transition: all .3s ease;
 }
 #header_top .top_left .q_menu1{
@@ -234,7 +234,7 @@ a:visited{
     overflow: hidden;
     top: 30px;
     border: 1px solid rgba(0,0,0,.1);
-    box-shadow: 0px 5px 5px 1px rgb(35 52 71 / 12%);
+    box-shadow: 0px 5px 5px 1px rgba(35,52,71,.12);
     transition: all .3s ease;
 }
 #header_top .top_left .q_menu2{
