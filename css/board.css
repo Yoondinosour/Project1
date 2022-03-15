@@ -1,0 +1,332 @@
+@charset "UTF-8";
+
+/* 기본 세팅 */
+
+.inner{
+    width: 1090px;
+    margin: 0 auto;
+}
+html{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+body{
+    font-size: 16px;
+    font-family: s-core-dream, "Noto Sans KR", "맑은 고딕", sans-serif;
+}
+.cf::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.page_title{
+    background: url(../images/board1/share_print.jpg) no-repeat right center;
+}
+
+/* 게시판 리모트 */
+.remote_area{
+    width: 300px;
+    height: 100%;
+}
+
+/* 게시판 검색창 */
+.boarder_wrap{
+    width: 100%;
+    padding: 50px 0px;
+    background: #E8EFF5;
+}
+.boarder_bg{
+    width: 1440px;
+    margin: 0 auto;
+    padding: 50px 0px 50px;
+    background: #fff;
+    border-radius: 20px;
+}
+.search_wrap{
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding: 50px 0 15px 0;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.all_content{
+    line-height: 60px;
+}
+
+fieldset{
+    border: none;
+}
+
+#search_form .blue{
+    color: #2e63c5;
+}
+
+.searchbar select{
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #cdcdcd;
+    border-radius: 5px 0 0 5px;
+    color: #333333;
+}
+
+.searchbar input{
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #cdcdcd;
+    border-left: none;
+}
+
+.searchbar button{
+    height: 40px;
+    color: #ffffff;
+    background: #053863;
+    border: 1px solid #cdcdcd;
+    border-left: none;
+    padding: 0 15px;
+    border-radius: 0 5px 5px 0;
+}
+
+/* 게시판 제목 */
+.top-title{
+    width: 100%;
+    background: #D8e3f2;
+    height: 55px;
+    text-align: center;
+    line-height: 53px;
+    border-top: 2px solid #333333;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.content{
+    width: 100%;
+
+    text-align: center;
+    line-height: 53px;
+}
+
+.number{
+    width: 75px;
+    border-right: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.title{
+    width: 730px;
+    border-right: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.writer{
+    width: 105px;
+    border-right: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.date{
+    width: 105px;
+    border-right: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.views{
+    width: 75px;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.left{
+    text-align: left;
+    padding-left: 15px;
+}
+
+/* 게시판 내용 */
+.content .content_wrap{
+    width: 95%;
+    text-align: left;
+    overflow: hidden;
+    height: 0;
+    transition: all 0.5s;
+}
+
+.content .content_wrap .subject{
+    text-align: justify;
+    font-weight: bold;
+    background: #D8e3f2;
+    font-size: 16px;
+    padding: 0px;
+}
+
+.content .content_wrap .content1{
+    text-align: justify;
+}
+
+.content input{
+    display:none;
+}
+.content label, button{
+    cursor: pointer;
+}
+.content label:hover{
+    color: royalblue;
+}
+.content input:checked ~ div.content_wrap{
+    height: auto;
+    margin: auto;
+    padding: 2% 0px;
+}
+.content input:checked ~ div.content_wrap .subject{
+    padding: 1% 0px;
+}
+.content input:checked ~ div.content_wrap .content1{
+    padding: 2% 0px;
+    line-height: 250%;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* 페이지네이션 */
+.page_wrap{
+    width: 300px;
+    margin: 20px auto;
+}
+
+.page_wrap>div{
+    width: 26px;
+    height: 28px;
+    text-indent: -9999999px;
+    margin-right: 5px;
+}
+
+.begining a{
+    display: block;
+    background: url(../images/board1/page.jpg) no-repeat center center;
+    width: 26px;
+    height: 28px;
+    background-position: -2px -2px;
+}
+.pre a{
+    display: block;
+    background: url(../images/board1/page.jpg) no-repeat center center;
+    width: 26px;
+    height: 28px;
+    background-position: -32px -2px;
+}
+.page1 a{
+    display: block;
+    background: url(../images/board1/page.jpg) no-repeat center center;
+    width: 26px;
+    height: 28px;
+    background-position: -68px -2px;
+}
+.page2 a{
+    display: block;
+    background: url(../images/board1/page.jpg) no-repeat center center;
+    width: 26px;
+    height: 28px;
+    background-position: -94px -2px;
+}
+.page3 a{
+    display: block;
+    background: url(../images/board1/page.jpg) no-repeat center center;
+    width: 26px;
+    height: 28px;
+    background-position: -121px -2px;
+}
+.page4 a{
+    display: block;
+    background: url(../images/board1/page.jpg) no-repeat center center;
+    width: 26px;
+    height: 28px;
+    background-position: -148px -2px;
+}
+.page5 a{
+    display: block;
+    background: url(../images/board1/page.jpg) no-repeat center center;
+    width: 26px;
+    height: 28px;
+    background-position: -174px -2px;
+}
+.next a{
+    display: block;
+    background: url(../images/board1/page.jpg) no-repeat center center;
+    width: 26px;
+    height: 28px;
+    background-position: -210px -2px;
+}
+.end a{
+    display: block;
+    background: url(../images/board1/page.jpg) no-repeat center center;
+    width: 26px;
+    height: 28px;
+    background-position: -238px -2px;
+}
+
+
+/* 만족도 */
+.fieldset_rate{
+    border: 1px solid #cdcdcd;
+    border-radius: 10px;
+    margin: 100px 0px 50px 0px;
+    padding: 20px 40px;
+}
+.question{
+    background: url(../images/board1/rate_bag.jpg) no-repeat left -3px;
+    width: 300px;
+    height: 34px;
+    line-height: 32px;
+    padding-left: 32px;
+}
+
+.fieldset_rate .point5{
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+}
+.fieldset_rate .point4{
+    padding: 10px;
+    width: 80px;
+    text-align: center;
+}
+.fieldset_rate .point3{
+    padding: 10px;
+    width: 80px;
+    text-align: center;
+}
+.fieldset_rate .point2{
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+}
+.fieldset_rate .point1{
+    padding: 10px;
+    width: 140px;
+    text-align: center;
+}
+.fieldset_rate .opinion input{
+    width: 380px;
+    background: #ededed;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    color: #cccccc;
+}
+.btn_rate{
+    background: #2e63c5;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+}

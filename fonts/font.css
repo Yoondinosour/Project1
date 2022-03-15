@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 's-core-dream';
+    src: url('./S-Core_Dream_OTF/SCDream3.otf');
+}
+
+
+.s-core-dream{
+    font-family: 's-core-dream';
+}
