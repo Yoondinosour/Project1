@@ -5,11 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_project1.png">
-    <title>교육부 - 모든 아이는 우리 모두의 아이</title>
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>공지사항 &#60; 교육부 소식 &#60; 교육부</title>
     <link rel="stylesheet" href="font.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/board.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script/js.js"></script>
+
 </head>
 
 <body>
@@ -277,12 +300,6 @@
                                     </li>
                                 </ul>
                             </div>
-                        <script>
-                            const box1=document.querySelector('li.quick1');
-                            box1.addEventListener('click',()=>{
-                                box1.classList.toggle('on')
-                            })
-                        </script>
                         </li>
                         <li class="fl quick2">
                             <a href="#"><span>시도교육청</span></a>
@@ -308,12 +325,6 @@
                                 </ul>
                             </div>
                         </li>
-                        <script>
-                            const box2=document.querySelector('li.quick2');
-                            box2.addEventListener('click',()=>{
-                                box2.classList.toggle('on')
-                            })
-                        </script>
                         <li class="fl">
                             <a href="board.html"><span>영문(ENG)</span></a>
                         </li>
@@ -340,7 +351,7 @@
                 <ul id="nav" class="cf">
                     <li id="moe_logo" class="fl logo">
                         <h1>
-                            <a href="index.html"><img src="./images/common/logo.svg" alt="교육부 로고"/></a>
+                            <a href="./"><img src="./images/common/logo.svg" alt="교육부 로고"/></a>
                         </h1>
                     </li>
                     <li class="m_1 fl">
@@ -743,10 +754,33 @@
         </div>
         <!-- //#header -->
         <div class="boarder_wrap">
-            <div class="boarder_bg">
-                <div class="inner">
+            <div class="boarder_bg cf">
+                <div class="boader_menu fl">
+                    <div class="head">
+                        <strong>교육부 소식</strong>
+                    </div>
+                    <div class="midd">
+                        <ul>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">인사알림</a></li>
+                            <li><a href="#">표창대상자 공개검증</a></li>
+                            <li><a href="#">보도·설명·반박</a></li>
+                            <li><a href="#">홍보자료</a></li>
+                            <li><a href="#">창작자(크리에이터)협업</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="inner fr">
                     <div class="search_wrap">
-                        <h1 class="page_title">공지사항</h1>
+                        <h2 class="page_title">공지사항</h2>
+                        <div class="location cf">
+                            <ul>
+                                <li class="fl"><a href="./"><i class="fa-solid fa-house"></i></a></li>
+                                <li class="fl"><i></i><a href="#">교육부 소식</a></li>
+                                <li class="fl"><i></i><a href="#">공지사항</a></li>
+                            </ul>
+                        </div>
+                        <div class="page_icon"><a href="#">공유하기 및 프린트하기</a></div>
                         <form action="#" id="search_form">
                             <fieldset>
                                 <div class="all_content fl">전체 <span class="blue">1,594</span> 건</div>

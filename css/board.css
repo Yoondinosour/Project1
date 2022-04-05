@@ -5,6 +5,7 @@
 .inner{
     width: 1090px;
     margin: 0 auto;
+    padding-top: 14px;
 }
 html{
     overflow-y: scroll;
@@ -25,35 +26,58 @@ body{
 .fr{
     float: right;
 }
-.page_title{
-    background: url(../images/board1/share_print.jpg) no-repeat right center;
+
+/* 게시판 메뉴 */
+.boader_menu{
+    width: 250px;
+    border-right: 1px solid #cccccc;
+    height: 1160px;
+}
+.boader_menu .head{
+    display: block;
+    width: 100%;
+    height: 124px;
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    line-height: 124px;
+    background: #053863 url(../images/common/sub_lnb_bg.png) no-repeat right center;
+    border-radius: 20px 0px 0px 0px;
+}
+.boader_menu .midd ul li{
+    border-bottom: 1px solid #cccccc;
+}
+.boader_menu .midd ul li a{
+    display: block;
+    padding: 15px;
+}
+.boader_menu .midd ul li a:hover{
+    color: #2e63c5;
 }
 
-/* 게시판 리모트 */
-.remote_area{
-    width: 300px;
-    height: 100%;
-}
 
 /* 게시판 검색창 */
 .boarder_wrap{
     width: 100%;
     padding: 50px 0px;
     background: #E8EFF5;
+    overflow: hidden;
 }
 .boarder_bg{
     width: 1440px;
     margin: 0 auto;
-    padding: 50px 0px 50px;
+    padding: 0px 50px 0px 0px;
     background: #fff;
     border-radius: 20px;
+    overflow: hidden;
 }
 .search_wrap{
+    position: relative;
     width: 100%;
     margin: 0 auto;
 }
 
-.search_wrap h1{
+.search_wrap h2{
     font-size: 30px;
     margin-bottom: 20px;
     padding: 50px 0 15px 0;
@@ -106,6 +130,35 @@ fieldset{
     line-height: 53px;
     border-top: 2px solid #333333;
     border-bottom: 1px solid #cdcdcd;
+}
+.location{
+    position: absolute;
+    top: 20px;
+    right: 0;
+    font-size: 14px;
+}
+.location ul li:nth-child(n+2) i{
+    display: inline-block;
+    background: url(../images/common/navi.svg) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    padding: 0 15px;
+}
+.location ul li a{
+    color: #666666;
+}
+
+
+
+.page_icon a{
+    text-indent: -9999999px;
+    display: block;
+    background: url(../images/board1/share_print.jpg) no-repeat right center;
+    width: 75px;
+    height: 39px;
+    position: absolute;
+    top: 60px;
+    right: 0;
 }
 
 .content{
