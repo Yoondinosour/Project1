@@ -5,13 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon_project1.png">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/MOE_favicon.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <title>교육부 - 모든 아이는 우리 모두의 아이</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="font.css">
-    <link rel="stylesheet" href="css/index.css">
-    
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script/detectmobilebrowser.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!--     <script src="script/js.js"></script> -->
+    <script src="script/jq.js"></script>
 </head>
 
 <body>
@@ -330,7 +353,7 @@
                 <ul id="nav" class="cf">
                     <li id="moe_logo" class="fl logo">
                         <h1>
-                            <a href="index.html"><img src="./images/common/logo.svg" alt="교육부 로고"/></a>
+                            <a href="./"><img src="./images/common/logo.svg" alt="교육부 로고"/></a>
                         </h1>
                     </li>
                     <li class="m_1 fl">
@@ -737,11 +760,19 @@
                 <div class="main_contents cf" id="main_contents">
                     <div class="main_banner fl">
                         <div class="banner_img cf">
-                            <a href="#"><h3>코로나 19 예방접종 안내문<br/>청소년 예방접종 Q&A</h3></a>
+                            <ul class="banner_slide">
+                                <li class="visual_0">
+                                    <a href="#"><h3>코로나 19 예방접종 안내문<br/>청소년 예방접종 Q&A</h3></a>
+                                </li>
+                                <li class="visual_1">
+                                    <a href="#"><h3>오미크론 대응 새 학기 <br/>방역·학사운영 안내
+                                    </h3></a>
+                                </li>
+                            </ul>
                             <ul class="banner_btn">
-                                <li class="fl"><button class="btn_left"></button></li>
+                                <li class="fl btn_left"><button class="btn_left"></button></li>
                                 <li class="fl"><button class="btn_play"></button></li>
-                                <li class="fl"><button class="btn_right"></button></li>
+                                <li class="fl btn_right"><button class="btn_right"></button></li>
                             </ul>
                         </div>
                     </div>
@@ -1095,7 +1126,7 @@
                             <div class="cf title">
                                 <span class="fl">알림판</span>
                                 <div class="fr control">
-                                    <span class="fl">1/3</span>
+                                    <span class="fl num">1/3</span>
                                     <button class="fl btn_before"></button>
                                     <button class="fl btn_play"></button>
                                     <button class="fl btn_after"></button>
@@ -1117,7 +1148,7 @@
             <div class="footer_area">
                 <div class="footer_spon">
                     <div class="footer_banner">
-                        <ul class="cf">
+                        <ul class="cf footer_slide">
                             <li class="fl"><a href="#">혁신적 포용국가</a></li>
                             <li class="fl"><a href="#">국립한글박물관</a></li>
                             <li class="fl"><a href="#">재외한국교육기관 정보 서비스(OKEIS)</a></li>
@@ -1131,8 +1162,6 @@
                             <li class="fl"><a href="#">대통령직속 국가교육회의</a></li>
                         </ul>
                     </div>
-                    <a class="before" href="#">이전</a>
-                    <a class="after" href="#">다음</a>
                 </div>
                 <div class="footer_info">
                     <div class="footer_menu">
@@ -1177,9 +1206,6 @@
         </div>
         <!-- //#footer -->
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="./javascript/jq.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* css 초기화 코드 */
+html{
+    overflow-y: scroll;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 's-core-dream';
+    letter-spacing: -1px;
+}
+ul,li{
+    list-style: none;
+}
+img{
+    border: 0;
+}
+a{
+    text-decoration: none;
+    color: #070707;
+}
+a:link{
+    color:#070707;
+}
+a:visited{
+    color: #070707;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.cf::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* 스킵메뉴(skip) */
+#skip{
+    position: relative;
+}
+#skip a{
+    position: absolute;
+    left: 0;
+    top: -150px;
+    color: #ffffff;
+    font-weight: bold;
+    background: #3a589e;
+    border: 3px solid #e8f0fe;
+    line-height: 50px;
+    width: 220px;
+    text-align: center;
+}
+#skip a:active, #skip a:focus{
+    top: 0;
+} 
