@@ -26,13 +26,13 @@
     <title>교육부 - 모든 아이는 우리 모두의 아이</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="font.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" href="css/style.css">
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script/detectmobilebrowser.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
 <!--     <script src="script/js.js"></script> -->
     <script src="script/jq.js"></script>
 </head>
@@ -770,9 +770,16 @@
                                 </li>
                             </ul>
                             <ul class="banner_btn">
-                                <li class="fl btn_left"><button class="btn_left"></button></li>
-                                <li class="fl"><button class="btn_play"></button></li>
-                                <li class="fl btn_right"><button class="btn_right"></button></li>
+                                <li class="fl">
+                                    <button class="btn_left"></button>
+                                </li>
+                                <li class="fl">
+                                    <button class="btn_play"></button>
+                                    <button class="btn_stop active"></button>
+                                </li>
+                                <li class="fl">
+                                    <button class="btn_right"></button>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -921,6 +928,7 @@
                             <div class="content3_btn fr">
                                 <button class="btn_before fl"></button>
                                 <button class="btn_play fl"></button>
+                                <button class="btn_stop active fl"></button>
                                 <button class="btn_after fl"></button>
                             </div>
                             <div class="morebtn fr">
@@ -942,136 +950,579 @@
                             <li class="fl"><a href="#">교육부 인스타그램</a></li>
                         </ul>
                     </div>
-                    <div class="sns_wrap">
-                        <ul class="sns_board">
-                            <li>
-                                <div class="sns_title1"><a href="#"><span class="title">페이스북</span></a></div>
-                                <div class="sns_content1">
-                                    <div class="sns_allcontents">
-                                        <ul class="sns_contents_wrap">
-                                            <li class="fb_slide1 fl">
-                                                <a href="#">
-                                                    <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="안전한 학교생활 궁금증을 풀어드립니다"></span>
-                                                    <span>[카드뉴스] 안전한 학교생활 궁금증을 풀어드립니다</span>
-                                                </a>
-                                            </li>
-                                            <li class="fb_slide2 fl">
-                                                <a href="#">
-                                                    <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="새학기 학교 방역의 모든것"></span>
-                                                    <span>[카드뉴스] 새학기 학교 방역의 모든것</span>
-                                                </a>
-                                            </li>
-                                            <li class="fb_slide3 fl">
-                                                <a href="#">
-                                                    <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="2021 적극행정 우수사례 - 교육부 편 -"></span>
-                                                    <span>[카드뉴스] 2021 적극행정 우수사례 - 교육부 편 -</span>
-                                                </a>
-                                            </li>
-                                            <li class="fb_slide4 fl">
-                                                <a href="#">
-                                                    <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="오미크론 대응 2022학년도 1학기 방역 및 학사 운영방안"></span>
-                                                    <span>[카드뉴스] 오미크론 대응 2022학년도 1학기 방역 및 학사 운영방안</span>
-                                                </a>
-                                            </li>
-                                            <li class="fb_slide5 fl">
-                                                <a href="#">
-                                                    <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="사립학교법 시행령이 일부 개정되었습니다."></span>
-                                                    <span>[카드뉴스] 사립학교법 시행령이 일부 개정되었습니다.</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="#" class="before"></a>
-                                    <a href="#" class="after"></a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="sns_title2"><a href="#"><span class="title">블로그</span></a></div>
-                                <div class="sns_content2">
-                                    <div class="sns_allcontents">
-                                        <ul class="sns_contents_wrap">
-                                            <li class="blg_slide1 fl">
-                                                <a href="#">
-                                                    <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="탄소중립 실천 학교에서 시작합니다!"></span>
-                                                    <span>탄소중립 실천 학교에서 시작합니다!</span>
-                                                </a>
-                                            </li>
-                                            <li class="blg_slide2 fl">
-                                                <a href="#">
-                                                    <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="2022학년도 1학기 안전한 대학 학사운영"></span>
-                                                    <span>2022학년도 1학기 안전한 대학 학사운영</span>
-                                                </a>
-                                            </li>
-                                            <li class="blg_slide3 fl">
-                                                <a href="#">
-                                                    <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="초중고교 학생들의 교육회복을 위한 대학생 튜터링에 참여하세요!"></span>
-                                                    <span>초중고교 학생들의 교육회복을 위한 대학생 튜터링에 참여하세요!</span>
-                                                </a>
-                                            </li>
-                                            <li class="blg_slide4 fl">
-                                                <a href="#">
-                                                    <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="청소년 백신접종 현황('22.3.14.)"></span>
-                                                    <span>청소년 백신접종 현황('22.3.14.)</span>
-                                                </a>
-                                            </li>
-                                            <li class="blg_slide5 fl">
-                                                <a href="#">
-                                                    <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="교육부 소관 5개 시행령 일부 개정"></span>
-                                                    <span>교육부 소관 5개 시행령 일부 개정</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="#" class="before"></a>
-                                    <a href="#" class="after"></a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="sns_title3"><a href="#"><span class="title">유튜브</span></a></div>
-                                <div class="sns_content3">
-                                    <div class="sns_allcontents">
-                                        <ul class="sns_contents_wrap">
-                                            <li class="you_slide1 fl">
-                                                <a href="#">
-                                                    <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="새 학기 우리 유치원은?"></span>
-                                                    <span>새 학기 우리 유치원은?</span>
-                                                </a>
-                                            </li>
-                                            <li class="you_slide2 fl">
-                                                <a href="#">
-                                                    <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="제4회 교육공공데이터 분석활용대회 참가자를 모집합니다!"></span>
-                                                    <span>제4회 교육공공데이터 분석활용대회 참가자를 모집합니다!</span>
-                                                </a>
-                                            </li>
-                                            <li class="you_slide3 fl">
-                                                <a href="#">
-                                                    <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="2022년 교육부 국민 서포터즈 '누리울림' 방구석 발대식 현장"></span>
-                                                    <span>2022년 교육부 국민 서포터즈 '누리울림' 방구석 발대식 현장</span>
-                                                </a>
-                                            </li>
-                                            <li class="you_slide4 fl">
-                                                <a href="#">
-                                                    <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="교육지원청-학교 간 비상연결망 점검! 학교방역 및 학사 운영 지원상황 확인 및 현장 의견 청취"></span>
-                                                    <span>교육지원청-학교 간 비상연결망 점검! 학교방역 및 학사 운영 지원상황 확인 및 현장 의견 청취</span>
-                                                </a>
-                                            </li>
-                                            <li class="you_slide5 fl">
-                                                <a href="#">
-                                                    <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="2022학년도 새 학기, 첫 등교! 학생들을 만나다!"></span>
-                                                    <span>2022학년도 새 학기, 첫 등교! 학생들을 만나다!</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="#" class="before"></a>
-                                    <a href="#" class="after"></a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="play_control cf">
-                            <a href="#" class="play fl">재생</a>
-                            <a href="#" class="stop fl">멈춤</a>
+                    <div class="sns_wrap cf">
+                        <div id="multi_slide">
+                            <div class="tabmenu fl">
+                                <ul>
+                                    <li>
+                                        <div><button class="tab_button addTab"><i></i> <span>페이스북</span></button></div>
+                                    </li>
+                                    <li>
+                                        <div><button class="tab_button"><i></i><span>블로그</span></button></div>
+                                    </li>
+                                    <li>
+                                        <div><button class="tab_button"><i></i><span>유튜브</span></button></div>
+                                    </li>
+                                </ul>
+                            </div> <!-- //.tabmenu -->
+                            <div class="slide_container">
+                                <span class="prev_btn_wrap">
+                                    <a href="javascript:void(0)" class="prev-btn"><i></i></a>
+                                </span> <!-- //.prev_btn_wrap -->
+                                <span class="next_btn_wrap">
+                                    <a href="javascript:void(0)" class="next-btn"><i></i></a>
+                                </span> <!-- //.next_btn_wrap -->
+                
+                                <!-- ## 슬라이드 그룹 4개 시작 ## -->
+                                <div class="slide_view slide_view_0">
+                                    <ul class="slide_wrap">
+                                        <li class="slide0 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="안전한 학교생활 궁금증을 풀어드립니다"></span>
+                                                            <span>[카드뉴스] 안전한 학교생활 궁금증을 풀어드립니다</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide0  -->
+                                        <li class="slide1 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="새학기 학교 방역의 모든것"></span>
+                                                            <span>[카드뉴스] 새학기 학교 방역의 모든것</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide1  -->
+                                        <li class="slide2 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content fl">
+                                                    <a href="#">
+                                                        <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="2021 적극행정 우수사례 - 교육부 편 -"></span>
+                                                        <span>[카드뉴스] 2021 적극행정 우수사례 - 교육부 편 -</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide2  -->
+                                        <li class="slide3 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="오미크론 대응 2022학년도 1학기 방역 및 학사 운영방안"></span>
+                                                            <span>[카드뉴스] 오미크론 대응 2022학년도 1학기 방역 및 학사 운영방안</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide3  -->
+                                        <li class="slide4 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="사립학교법 시행령이 일부 개정되었습니다."></span>
+                                                            <span>[카드뉴스] 사립학교법 시행령이 일부 개정되었습니다.</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide4  -->
+                                        <li class="slide0 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="안전한 학교생활 궁금증을 풀어드립니다"></span>
+                                                            <span>[카드뉴스] 안전한 학교생활 궁금증을 풀어드립니다</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide0  -->
+                                        <li class="slide1 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="새학기 학교 방역의 모든것"></span>
+                                                            <span>[카드뉴스] 새학기 학교 방역의 모든것</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide1  -->
+                                        <li class="slide2 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content fl">
+                                                    <a href="#">
+                                                        <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="2021 적극행정 우수사례 - 교육부 편 -"></span>
+                                                        <span>[카드뉴스] 2021 적극행정 우수사례 - 교육부 편 -</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide2  -->
+                                        <li class="slide3 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="오미크론 대응 2022학년도 1학기 방역 및 학사 운영방안"></span>
+                                                            <span>[카드뉴스] 오미크론 대응 2022학년도 1학기 방역 및 학사 운영방안</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide3  -->
+                                        <li class="slide4 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="사립학교법 시행령이 일부 개정되었습니다."></span>
+                                                            <span>[카드뉴스] 사립학교법 시행령이 일부 개정되었습니다.</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide4  -->
+                                        <li class="slide0 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="안전한 학교생활 궁금증을 풀어드립니다"></span>
+                                                            <span>[카드뉴스] 안전한 학교생활 궁금증을 풀어드립니다</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide0  -->
+                                        <li class="slide1 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="새학기 학교 방역의 모든것"></span>
+                                                            <span>[카드뉴스] 새학기 학교 방역의 모든것</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide1  -->
+                                        <li class="slide2 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content fl">
+                                                    <a href="#">
+                                                        <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="2021 적극행정 우수사례 - 교육부 편 -"></span>
+                                                        <span>[카드뉴스] 2021 적극행정 우수사례 - 교육부 편 -</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide2  -->
+                                        <li class="slide3 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="오미크론 대응 2022학년도 1학기 방역 및 학사 운영방안"></span>
+                                                            <span>[카드뉴스] 오미크론 대응 2022학년도 1학기 방역 및 학사 운영방안</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide3  -->
+                                        <li class="slide4 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="사립학교법 시행령이 일부 개정되었습니다."></span>
+                                                            <span>[카드뉴스] 사립학교법 시행령이 일부 개정되었습니다.</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide4  -->
+                                    </ul>
+                                </div> <!-- //.slide_view_0 -->
+                                <div class="slide_view slide_view_1">
+                                    <ul class="slide_wrap">
+                                        <li class="slide0 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="탄소중립 실천 학교에서 시작합니다!"></span>
+                                                            <span>탄소중립 실천 학교에서 시작합니다!</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide0  -->
+                                        <li class="slide1 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="2022학년도 1학기 안전한 대학 학사운영"></span>
+                                                            <span>2022학년도 1학기 안전한 대학 학사운영</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide1  -->
+                                        <li class="slide2 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="초중고교 학생들의 교육회복을 위한 대학생 튜터링에 참여하세요!"></span>
+                                                            <span>초중고교 학생들의 교육회복을 위한 대학생 튜터링에 참여하세요!</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide2  -->
+                                        <li class="slide3 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="청소년 백신접종 현황('22.3.14.)"></span>
+                                                            <span>청소년 백신접종 현황('22.3.14.)</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide3  -->
+                                        <li class="slide4 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="교육부 소관 5개 시행령 일부 개정"></span>
+                                                            <span>교육부 소관 5개 시행령 일부 개정</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide4  -->
+                                        <li class="slide0 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="탄소중립 실천 학교에서 시작합니다!"></span>
+                                                            <span>탄소중립 실천 학교에서 시작합니다!</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide0  -->
+                                        <li class="slide1 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="2022학년도 1학기 안전한 대학 학사운영"></span>
+                                                            <span>2022학년도 1학기 안전한 대학 학사운영</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide1  -->
+                                        <li class="slide2 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="초중고교 학생들의 교육회복을 위한 대학생 튜터링에 참여하세요!"></span>
+                                                            <span>초중고교 학생들의 교육회복을 위한 대학생 튜터링에 참여하세요!</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide2  -->
+                                        <li class="slide3 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="청소년 백신접종 현황('22.3.14.)"></span>
+                                                            <span>청소년 백신접종 현황('22.3.14.)</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide3  -->
+                                        <li class="slide4 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="교육부 소관 5개 시행령 일부 개정"></span>
+                                                            <span>교육부 소관 5개 시행령 일부 개정</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide4  -->
+                                        <li class="slide0 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="탄소중립 실천 학교에서 시작합니다!"></span>
+                                                            <span>탄소중립 실천 학교에서 시작합니다!</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide0  -->
+                                        <li class="slide1 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="2022학년도 1학기 안전한 대학 학사운영"></span>
+                                                            <span>2022학년도 1학기 안전한 대학 학사운영</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide1  -->
+                                        <li class="slide2 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="초중고교 학생들의 교육회복을 위한 대학생 튜터링에 참여하세요!"></span>
+                                                            <span>초중고교 학생들의 교육회복을 위한 대학생 튜터링에 참여하세요!</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide2  -->
+                                        <li class="slide3 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="청소년 백신접종 현황('22.3.14.)"></span>
+                                                            <span>청소년 백신접종 현황('22.3.14.)</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide3  -->
+                                        <li class="slide4 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="교육부 소관 5개 시행령 일부 개정"></span>
+                                                            <span>교육부 소관 5개 시행령 일부 개정</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide4  -->
+                                    </ul>
+                                </div> <!-- //.slide_view_1 -->
+                                <div class="slide_view slide_view_2">
+                                    <ul class="slide_wrap">
+                                        <li class="slide0 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="오미크론 대응 관련 대학 현장 방문"></span>
+                                                            <span>오미크론 대응 관련 대학 현장 방문</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide0  -->
+                                        <li class="slide1 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="식목일을 맞아 함께 나무를 심어요~!"></span>
+                                                            <span>식목일을 맞아 함께 나무를 심어요~!</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide1  -->
+                                        <li class="slide2 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="2022학년도 1학기 방역관리 점검을 위한 대안학교 현장 방문"></span>
+                                                            <span>2022학년도 1학기 방역관리 점검을 위한 대안학교 현장 방문</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide2  -->
+                                        <li class="slide3 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="오늘은 무슨 날? 보건의 날과 함께 보는 보건 교육"></span>
+                                                            <span>오늘은 무슨 날? 보건의 날과 함께 보는 보건 교육</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide3  -->
+                                        <li class="slide4 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="고등직업교육거점지구사업 소개"></span>
+                                                            <span>고등직업교육거점지구사업 소개</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide4  -->
+                                        <li class="slide0 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="오미크론 대응 관련 대학 현장 방문"></span>
+                                                            <span>오미크론 대응 관련 대학 현장 방문</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide0  -->
+                                        <li class="slide1 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="식목일을 맞아 함께 나무를 심어요~!"></span>
+                                                            <span>식목일을 맞아 함께 나무를 심어요~!</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide1  -->
+                                        <li class="slide2 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="2022학년도 1학기 방역관리 점검을 위한 대안학교 현장 방문"></span>
+                                                            <span>2022학년도 1학기 방역관리 점검을 위한 대안학교 현장 방문</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide2  -->
+                                        <li class="slide3 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="오늘은 무슨 날? 보건의 날과 함께 보는 보건 교육"></span>
+                                                            <span>오늘은 무슨 날? 보건의 날과 함께 보는 보건 교육</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide3  -->
+                                        <li class="slide4 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="고등직업교육거점지구사업 소개"></span>
+                                                            <span>고등직업교육거점지구사업 소개</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide4  -->
+                                        <li class="slide0 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="오미크론 대응 관련 대학 현장 방문"></span>
+                                                            <span>오미크론 대응 관련 대학 현장 방문</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide0  -->
+                                        <li class="slide1 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="식목일을 맞아 함께 나무를 심어요~!"></span>
+                                                            <span>식목일을 맞아 함께 나무를 심어요~!</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide1  -->
+                                        <li class="slide2 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="2022학년도 1학기 방역관리 점검을 위한 대안학교 현장 방문"></span>
+                                                            <span>2022학년도 1학기 방역관리 점검을 위한 대안학교 현장 방문</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide2  -->
+                                        <li class="slide3 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="오늘은 무슨 날? 보건의 날과 함께 보는 보건 교육"></span>
+                                                            <span>오늘은 무슨 날? 보건의 날과 함께 보는 보건 교육</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide3  -->
+                                        <li class="slide4 slide">
+                                            <div class="slide_gap">
+                                                <div class="slide_content">
+                                                    <div class="caption fl">
+                                                        <a href="#">
+                                                            <span class="picture"><img src="./images/main/photo_bic_grid.png" alt="고등직업교육거점지구사업 소개"></span>
+                                                            <span>고등직업교육거점지구사업 소개</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> <!-- //.slide4  -->
+                                    </ul>
+                                </div> <!-- //.slide_view_2 -->
+                            </div>
+                            <!-- //.slide_container -->
+                        </div>
                     </div>
                 </div>
                 <!-- SNS(페이스북 / 블로그 / 유튜브) -->
@@ -1126,16 +1577,17 @@
                             <div class="cf title">
                                 <span class="fl">알림판</span>
                                 <div class="fr control">
-                                    <span class="fl num">1/3</span>
+                                    <span class="fl num">/ 3</span>
                                     <button class="fl btn_before"></button>
                                     <button class="fl btn_play"></button>
+                                    <button class="fl btn_stop active"></button>
                                     <button class="fl btn_after"></button>
                                 </div>
                             </div>
                             <div class="content3_board">
-                                <div class="slide1"><a href="#"><img src="./images/main/alim_grid.png" alt="알림판1"></a></div>
-                                <div class="slide2"><a href="#"><img src="./images/main/alim_grid.png" alt="알림판2"></a></div>
-                                <div class="slide3"><a href="#"><img src="./images/main/alim_grid.png" alt="알림판3"></a></div>
+                                <div class="slide1" data-title="1"><a href="#"><img src="./images/main/alim_grid.png" alt="알림판1"></a></div>
+                                <div class="slide2" data-title="2"><a href="#"><img src="./images/main/alim_grid.png" alt="알림판2"></a></div>
+                                <div class="slide3" data-title="3"><a href="#"><img src="./images/main/alim_grid.png" alt="알림판3"></a></div>
                             </div>
                         </div>
                     </div>
@@ -1164,8 +1616,8 @@
                     </div>
                 </div>
                 <div class="footer_info">
-                    <div class="footer_menu">
-                        <ul class="cf">
+                    <div class="footer_menu cf">
+                        <ul class="fl">
                             <li class="fl"><a href="#">개인정보처리방침</a></li>
                             <li class="fl"><a href="#">이용안내</a></li>
                             <li class="fl"><a href="#">웹접근성정책</a></li>
@@ -1173,6 +1625,10 @@
                             <li class="fl"><a href="#">행정서비스현장</a></li>
                             <li class="fl"><a href="#">전자우편 무단 수집거부</a></li>
                             <li class="fl"><a href="#">읽기전용프로그램</a></li>
+                        </ul>
+                        <ul class="fr">
+                            <li class="fl"><a href="https://validator.w3.org/check?uri=yoondinosour30.dothome.co.kr/project/project1/" target="blank"><img src="https://www.w3.org/Icons/valid-html401" alt="HTML유효성 인증 마크"></a></li>
+                            <li class="fl"><a href="https://jigsaw.w3.org/css-validator/validator?uri=yoondinosour30.dothome.co.kr/project/project1/" target="blank"><img src="https://www.w3.org/Icons/valid-css2" alt="CSS유효성 인증 마크"></a></li>
                         </ul>
                     </div>
                     <div class="footer_address">
