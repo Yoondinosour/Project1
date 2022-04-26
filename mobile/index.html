@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/MOE_favicon.png">
+    <link rel="manifest" href="../images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>교육부 - 모든 아이는 우리 모두의 아이</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../font.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../script/detectmobilebrowser.js"></script>
+    <script src="script/jq.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="container">
+                <div class="header_fixed cf">
+                    <div class="logo fl">
+                        <h1>
+                            <a href="#">교육부로고</a>
+                        </h1>
+                    </div>
+                    <div class="btn_wrap fr">
+                        <div class="search fl">
+                            <a href="#"><span>검색하기</span></a>
+                        </div>
+                        <div class="menu fl">
+                            <a href="#"><span>메뉴열기</span></a>
+                        </div>
+                    </div>
+                    <form class="search_bar">
+                        <fieldset>
+                            <input type="search" placeholder="검색어를 입력하세요.">
+                            <div class="btn_close">
+                                <a href="#"><span>검색닫기</span></a>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="lnb">
+                    <div class="header">
+                        <ul class="cf">
+                            <li class="fl"><a href="#">어린이</a></li>
+                            <li class="fl"><a href="#">영문(ENG)</a></li>
+                            <li class="fr btn_close"><a href="#"><span>메뉴닫기</span></a></li>
+                        </ul>
+                    </div>
+                    <ul class="depth_1">
+                        <li class="active">
+                            <a href="#">국민참여·민원</a>
+                            <ul class="depth_2 active">
+                                <li>
+                                    <a href="#">참여·소통</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">참여 정보 한눈에</a></li>
+                                        <li><a href="#">국민제안</a></li>
+                                        <li><a href="#">나의국민제안</a></li>
+                                        <li><a href="#"><span class="blank">국민생각함</span></a></li>
+                                        <li><a href="#">전자공청회</a></li>
+                                        <li><a href="#">학교방역 및 학사운영 현장 소통 게시판</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">민원</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">민원신청하기</a></li>
+                                        <li><a href="#">나의민원학인</a></li>
+                                        <li><a href="#">국민콜110</a></li>
+                                        <li><a href="#">자주묻는질문(FAQ)</a></li>
+                                        <li><a href="#">질의회신사례집</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">규제개혁</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">규제란?</a></li>
+                                        <li><a href="#">규제개혁과제</a></li>
+                                        <li><a href="#">규제개선건의</a></li>
+                                        <li><a href="#">규제입증요청</a></li>
+                                        <li><a href="#"><span class="blank">규제정보포털로 바로가기</span></a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">적극행정</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">적극행정이란?</a></li>
+                                        <li><a href="#">적극행정 교육 및 우수사례</a></li>
+                                        <li><a href="#"><span class="blank">적극행정 공무원·정책 국민추천</span></a></li>
+                                        <li><a href="#">적극행정 우수공무원</a></li>
+                                        <li><a href="#">적극행정 점검단(모니터링단) 활동</a></li>
+                                        <li><a href="#">소극행정 신고하기</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">신고·고충처리</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#"><span class="blank">안전신문고</span></a></li>
+                                        <li><a href="#">불법사교육신고센터</a></li>
+                                        <li><a href="#">사학 혁신제안·비리 신고센터</a></li>
+                                        <li><a href="#">교육분야 성희롱·성폭력 신고센터</a></li>
+                                        <li><a href="#">학생선수 폭력피해 신고센터</a></li>
+                                        <li><a href="#">유치원 비리 신고센터</a></li>
+                                        <li><a href="#">돌봄 고충지원센터</a></li>
+                                        <li><a href="#">갑질 신고센터</a></li>
+                                        <li><a href="#">공시정보 오류 및 허위정보 신고센터</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">부패공익신고</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">내부 부패 행위 등 신문고</a></li>
+                                        <li><a href="#"><span class="blank">청렴정책자문관(청렴옴부즈맨)</span></a></li>
+                                        <li><a href="#">예산 낭비 신문고</a></li>
+                                        <li><a href="#">나의신고보기</a></li>
+                                        <li><a href="#">공익신고센터</a></li>
+                                        <li><a href="#">복지·보조금 부정수급 및 공공재정 부정청구 등 신고센터</a></li>
+                                        <li><a href="#">청탁금지법 자료실</a></li>
+                                        <li><a href="#"><span class="blank">청탁금지법 문의</span></a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">교육부 청백리 칭찬방</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">교육부 소식</a>
+                            <ul class="depth_2">
+                                <li>
+                                    <a href="#">공지사항</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">공지사항</a></li>
+                                        <li><a href="#">사업공고</a></li>
+                                        <li><a href="#">입찰알림</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">인사알림</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">인사정보</a></li>
+                                        <li><a href="#">채용공고</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">표창대상자 공개검증</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">표창대상자 공개검증</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">보도·설명·반박</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">보도자료</a></li>
+                                        <li><a href="#">동정자료</a></li>
+                                        <li><a href="#">보도·설명·반박</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">홍보자료</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">영상뉴스</a></li>
+                                        <li><a href="#">전자(e)브리핑</a></li>
+                                        <li><a href="#">홍보이미지</a></li>
+                                        <li><a href="#">홍보동영상</a></li>
+                                        <li><a href="#">행복한교육 누리잡지</a></li>
+                                        <li><a href="#">소식지</a></li>
+                                        <li><a href="#">해외교육정보동향자료</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">창작자(크리에이터)협업</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">창작자(크리에이터)협업</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">정책</a>
+                            <ul class="depth_2">
+                                <li>
+                                    <a href="#">주요업무계획</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">2022년 주요업무계획</a></li>
+                                        <li><a href="#">2021년 이전 주요업무계획</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">코로나19 학교방역 및 학사운영</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">학교방역 및 학사운영 관련 정보</a></li>
+                                        <li><a href="#">교육분야 코로나19 현황</a></li>
+                                        <li><a href="#">교육분야 코로나19 참고자료</a></li>
+                                        <li><a href="#">교육분야 코로나19 관련 지침</a></li>
+                                        <li><a href="#">자주하는 질문</a></li>
+                                        <li><a href="#">원격수업도움센터</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">오미크론 대응 새학기 방역·학사운영 안내</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">오미크론 대응 새 학기 방역·학사운영 안내</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">한국판 뉴딜</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">한국판 뉴딜</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">유아교육</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">유아교육</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">초·중·고 교육</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">초·중·고 교육</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">대학(원)교육</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">대학(원)교육</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">평생교육</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">평생교육</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">교원</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">교원</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">국외(유학) 교육</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">국외(유학) 교육</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">교육 통계 및 정보화</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">교육 통계 및 정보화</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">지방교육자치</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">지방교육자치</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">사회정책</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">사회정책</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">정보·법령</a>
+                            <ul class="depth_2">
+                                <li>
+                                    <a href="#">정보공개</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">정보공개 제도안내</a></li>
+                                        <li><a href="#">정보공표 운영 종합표</a></li>
+                                        <li><a href="#">정보목록</a></li>
+                                        <li><a href="#"><span class="blank">정보공개청구</span></a></li>
+                                        <li><a href="#">비공개 대상 정보</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">사전정보공표</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">교육부 행정 정보</a></li>
+                                        <li><a href="#">감사정보</a></li>
+                                        <li><a href="#">재정·예산 정보</a></li>
+                                        <li><a href="#">계약정보</a></li>
+                                        <li><a href="#">국고보조금 정보</a></li>
+                                        <li><a href="#">사회적협동조합 경영공시</a></li>
+                                        <li><a href="#">업무추진비 사용내역</a></li>
+                                        <li><a href="#"><span class="blank">정책연구 정보</span></a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">공공데이터 개방</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">공공데이터 개방 제도안내</a></li>
+                                        <li><a href="#">제공대상 공공데이터 목록</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">정책실명(이력)제</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">정책실명(이력)제</a></li>
+                                        <li><a href="#">국민신청실명제</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">법령정보</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">입법·행정예고</a></li>
+                                        <li><a href="#">소관법령정보</a></li>
+                                        <li><a href="#"><span class="blank">판례</span></a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">공공누리</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">공공누리 제도안내</a></li>
+                                        <li><a href="#">공공누리 유형안내</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">교육부 소개</a>
+                            <ul class="depth_2">
+                                <li>
+                                    <a href="#">일반현황</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">연혁</a></li>
+                                        <li><a href="#">소속기관</a></li>
+                                        <li><a href="#">시·도교육청</a></li>
+                                        <li><a href="#">국정지표</a></li>
+                                        <li><a href="#">부처 상징(MI)</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="blank">열린부총리실</span></a>
+                                    <ul class="depth_3">
+                                        <li><a href="#"><span class="blank">부총리 소개</span></a></li>
+                                        <li><a href="#"><span class="blank">부총리 동정</span></a></li>
+                                        <li><a href="#"><span class="blank">말과 글</span></a></li>
+                                        <li><a href="#"><span class="blank">부총리에게 바란다</span></a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">차관</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">약력</a></li>
+                                        <li><a href="#">동정</a></li>
+                                        <li><a href="#">일정</a></li>
+                                        <li><a href="#">인터뷰기사</a></li>
+                                        <li><a href="#">동영상</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">조직도·직원 및 연락처</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">조직도·직원 및 연락처</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">찾아오시는 길</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#">찾아오시는 길</a></li>
+                                        <li><a href="#">층별안내</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">관련누리집</a>
+                            <ul class="depth_2">
+                                <li>
+                                    <a href="#">교육일반</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#"><span class="blank">교육정보디지털도서관</span></a></li>
+                                        <li><a href="#"><span class="blank">교육통계서비스</span></a></li>
+                                        <li><a href="#"><span class="blank">나이스대국민서비스</span></a></li>
+                                        <li><a href="#"><span class="blank">외국교육기관 및 외국인 학교 종합안내</span></a></li>
+                                        <li><a href="#"><span class="blank">학교안전정보센터</span></a></li>
+                                        <li><a href="#"><span class="blank">학교알리미</span></a></li>
+                                        <li><a href="#"><span class="blank">한국유학종합시스템</span></a></li>
+                                        <li><a href="#"><span class="blank">행복한 교육</span></a></li>
+                                        <li><a href="#"><span class="blank">교육부 조직연혁정보시스템</span></a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">유ㆍ초ㆍ중ㆍ고</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#"><span class="blank">고입정보 포털</span></a></li>
+                                        <li><a href="#"><span class="blank">교과서 민원 바로처리센터</span></a></li>
+                                        <li><a href="#"><span class="blank">교육기부포털</span></a></li>
+                                        <li><a href="#"><span class="blank">교육비 원클릭 신청시스템</span></a></li>
+                                        <li><a href="#"><span class="blank">국가교육과정정보센터</span></a></li>
+                                        <li><a href="#"><span class="blank">농어촌 교육 지원센터</span></a></li>
+                                        <li><a href="#"><span class="blank">에듀넷-티클리어</span></a></li>
+                                        <li><a href="#"><span class="blank">유아학비지원시스템</span></a></li>
+                                        <li><a href="#"><span class="blank">유치원알리미</span></a></li>
+                                        <li><a href="#"><span class="blank">자유학기제</span></a></li>
+                                        <li><a href="#"><span class="blank">학생건강정보센터</span></a></li>
+                                        <li><a href="#"><span class="blank">재외한국교육기관 정보서비스</span></a></li>
+                                        <li><a href="#"><span class="blank">중앙다문화교육센터</span></a></li>
+                                        <li><a href="#"><span class="blank">지방교육재정 알리미</span></a></li>
+                                        <li><a href="#"><span class="blank">크레존</span></a></li>
+                                        <li><a href="#"><span class="blank">탈북청소년교육지원센터</span></a></li>
+                                        <li><a href="#"><span class="blank">통통 평화학교:통일로 통하는 평화학교</span></a></li>
+                                        <li><a href="#"><span class="blank">학교폭력 예방 누리집 '도란도란'</span></a></li>
+                                        <li><a href="#"><span class="blank">학교폭력 예방교육 연구지원센터</span></a></li>
+                                        <li><a href="#"><span class="blank">학부모 온누리</span></a></li>
+                                        <li><a href="#"><span class="blank">학생위기상담 종합지원서비스(Wee)</span></a></li>
+                                        <li><a href="#"><span class="blank">학생평가지원포털</span></a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">대학</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#"><span class="blank">대학 알리미</span></a></li>
+                                        <li><a href="#"><span class="blank">BK21 플러스</span></a></li>
+                                        <li><a href="#"><span class="blank">기초학문자료센터</span></a></li>
+                                        <li><a href="#"><span class="blank">대입정보 포털</span></a></li>
+                                        <li><a href="#"><span class="blank">대학인가확인서발급</span></a></li>
+                                        <li><a href="#"><span class="blank">대학자율역량강화지원사업(ACE)</span></a></li>
+                                        <li><a href="#"><span class="blank">대학재정알리미</span></a></li>
+                                        <li><a href="#"><span class="blank">사학분쟁조정위원회</span></a></li>
+                                        <li><a href="#"><span class="blank">산학협력종합지원센터</span></a></li>
+                                        <li><a href="#"><span class="blank">연구윤리정보센터</span></a></li>
+                                        <li><a href="#"><span class="blank">폐쇄(폐지)대학 통합증명서발급서비스</span></a></li>
+                                        <li><a href="#"><span class="blank">학교기업 지원사업</span></a></li>
+                                        <li><a href="#"><span class="blank">한국교양기초교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">학술연구정보서비스</span></a></li>
+                                        <li><a href="#"><span class="blank">학술정보통계시스템</span></a></li>
+                                        <li><a href="#"><span class="blank">한국형 온라인 공개강좌(K-MOOC)</span></a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">평생직업</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#"><span class="blank">국가직무능력표준</span></a></li>
+                                        <li><a href="#"><span class="blank">국가평생교육진흥원 학점은행</span></a></li>
+                                        <li><a href="#"><span class="blank">늘배움</span></a></li>
+                                        <li><a href="#"><span class="blank">민간자격정보서비스</span></a></li>
+                                        <li><a href="#"><span class="blank">진로정보망(커리어넷)</span></a></li>
+                                        <li><a href="#"><span class="blank">진로체험망(꿈길)</span></a></li>
+                                        <li><a href="#"><span class="blank">특성화고, 마이스터고 포털 하이파이브</span></a></li>
+                                        <li><a href="#"><span class="blank">학점은행제알리미</span></a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">직속기관</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#"><span class="blank">국사편찬위원회</span></a></li>
+                                        <li><a href="#"><span class="blank">대한민국학술원</span></a></li>
+                                        <li><a href="#"><span class="blank">교원소청심사위원회</span></a></li>
+                                        <li><a href="#"><span class="blank">중앙교육연수원</span></a></li>
+                                        <li><a href="#"><span class="blank">국립특수교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">국립국제교육원</span></a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">재외 한국교육</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#"><span class="blank">코리안넷</span></a></li>
+                                        <li><a href="#"><span class="blank">건국한국학교</span></a></li>
+                                        <li><a href="#"><span class="blank">광저우한국학교</span></a></li>
+                                        <li><a href="#"><span class="blank">교토국제학교</span></a></li>
+                                        <li><a href="#"><span class="blank">까오숑한국국제학교</span></a></li>
+                                        <li><a href="#"><span class="blank">대련한국국제학교</span></a></li>
+                                        <li><a href="#"><span class="blank">동경한국학교</span></a></li>
+                                        <li><a href="#"><span class="blank">리야드하
+
+                                        </span></a></li>
+                                        <li><a href="#"><span class="blank">모스크바한국학교</span></a></li>
+                                        <li><a href="#"><span class="blank">무석한국학교</span></a></li>
+                                        <li><a href="#"><span class="blank">말레이시아한국국제학교</span></a></li>
+                                        <li><a href="#"><span class="blank">방콕한국국제학교</span></a></li>
+                                        <li><a href="#"><span class="blank">북경한국국제학교</span></a></li>
+                                        <li><a href="#"><span class="blank">브라질한국학교</span></a></li>
+                                        <li><a href="#"><span class="blank">상해한국학교</span></a></li>
+                                        <li><a href="#"><span class="blank">선양한국국제학교</span></a></li>
+                                        <li><a href="#"><span class="blank">소주한국학교</span></a></li>
+                                        <li><a href="#"><span class="blank">싱가포르한국국제학교</span></a></li>
+                                        <li><a href="#"><span class="blank">아르헨티나한국학교</span></a></li>
+                                        <li><a href="#"><span class="blank">연대한국학교</span></a></li>
+                                        <li><a href="#"><span class="blank">연변한국국제학교</span></a></li>
+                                        <li><a href="#"><span class="blank">오사카금강학교</span></a></li>
+                                        <li><a href="#"><span class="blank">웨이하이한국학교</span></a></li>
+                                        <li><a href="#"><span class="blank">자카르타한국국제학교</span></a></li>
+                                        <li><a href="#"><span class="blank">젯다한국학교</span></a></li>
+                                        <li><a href="#"><span class="blank">천진한국국제학교</span></a></li>
+                                        <li><a href="#"><span class="blank">칭다오청운한국학교</span></a></li>
+                                        <li><a href="#"><span class="blank">카이로한국학교</span></a></li>
+                                        <li><a href="#"><span class="blank">타이뻬이한국학교</span></a></li>
+                                        <li><a href="#"><span class="blank">파라과이한국학교</span></a></li>
+                                        <li><a href="#"><span class="blank">필리핀한국국제학교</span></a></li>
+                                        <li><a href="#"><span class="blank">프놈펜한국국제학교</span></a></li>
+                                        <li><a href="#"><span class="blank">하노이한국국제학교</span></a></li>
+                                        <li><a href="#"><span class="blank">호치민시한국국제학교</span></a></li>
+                                        <li><a href="#"><span class="blank">홍콩한국국제학교</span></a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">재외 한국교육원</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#"><span class="blank">LA한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">가나가와한국종합교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">고베한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">교토한</span></a></li>
+
+                                        <li><a href="#"><span class="blank">나가노한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">나라한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">뉴욕한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">뉴질랜드한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">독일한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">동경한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">로스토프나도누한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">블라디보스톡한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">비쉬켁한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">사이타마한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">사할린한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">삿포로한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">상파울루한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">샌프란시스코한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">센다이한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">시드니한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">시모노세키한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">시카고한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">아르헨티나한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">알마티한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">영국한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">오사카한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">오카야마한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">우크라이나한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">워싱턴한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">주일한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">치바한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">캐나다한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">타쉬켄트한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">태국한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">파라과이한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">프랑스한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">하바로프스크한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">호치민시한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">후쿠오카한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">휴스턴한국교육원</span></a></li>
+                                        <li><a href="#"><span class="blank">히로시마한국교육원</span></a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">산하단체</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#"><span class="blank">국가평생교육진흥원</span></a></li>
+                                        <li><a href="#"><span class="blank">동북아역사재단</span></a></li>
+                                        <li><a href="#"><span class="blank">사립학교교직원연금공단</span></a></li>
+                                        <li><a href="#"><span class="blank">유네스코한국위원회</span></a></li>
+                                        <li><a href="#"><span class="blank">한국고전번역원</span></a></li>
+                                        <li><a href="#"><span class="blank">한국교육학술정보원</span></a></li>
+                                        <li><a href="#"><span class="blank">한국교직원공제회</span></a></li>
+                                        <li><a href="#"><span class="blank">한국대학교육협의회</span></a></li>
+                                        <li><a href="#"><span class="blank">한국사학진흥재단</span></a></li>
+                                        <li><a href="#"><span class="blank">한국장학재단</span></a></li>
+                                        <li><a href="#"><span class="blank">한국전문대학교육협의회</span></a></li>
+                                        <li><a href="#"><span class="blank">한국학중앙연구원</span></a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">유관단체</a>
+                                    <ul class="depth_3">
+                                        <li><a href="#"><span class="blank">한국교육시설안전원</span></a></li>
+                                        <li><a href="#"><span class="blank">대한민국교원조합</span></a></li>
+                                        <li><a href="#"><span class="blank">대학사립중고등학교장회</span></a></li>
+                                        <li><a href="#"><span class="blank">문우회</span></a></li>
+                                        <li><a href="#"><span class="blank">(재)산학협동재단</span></a></li>
+                                        <li><a href="#"><span class="blank">소비자교육중앙회</span></a></li>
+                                        <li><a href="#"><span class="blank">학교안전공제중앙회</span></a></li>
+                                        <li><a href="#"><span class="blank">한국과학창의재단</span></a></li>
+                                        <li><a href="#"><span class="blank">한국교원노동조합</span></a></li>
+                                        <li><a href="#"><span class="blank">한국교원단체총연합회</span></a></li>
+                                        <li><a href="#"><span class="blank">한국교육개발원</span></a></li>
+                                        <li><a href="#"><span class="blank">한국교육과정평가원</span></a></li>
+                                        <li><a href="#"><span class="blank">한국교육방송공사</span></a></li>
+                                        <li><a href="#"><span class="blank">한국교육삼락회총연합회</span></a></li>
+                                        <li><a href="#"><span class="blank">한국교육정보진흥협회</span></a></li>
+                                        <li><a href="#"><span class="blank">한국대학법인협의회</span></a></li>
+                                        <li><a href="#"><span class="blank">한국대학사회봉사협의회</span></a></li>
+                                        <li><a href="#"><span class="blank">한국민간자격협회</span></a></li>
+                                        <li><a href="#"><span class="blank">한국사립초중고등학교법인협의회</span></a></li>
+                                        <li><a href="#"><span class="blank">한국사학법인연합회</span></a></li>
+                                        <li><a href="#"><span class="blank">한국연구재단</span></a></li>
+                                        <li><a href="#"><span class="blank">한국전문대학법인협의회</span></a></li>
+                                        <li><a href="#"><span class="blank">한국지도자육성장학재단</span></a></li>
+                                        <li><a href="#"><span class="blank">한국직업능력개발원</span></a></li>
+                                        <li><a href="#"><span class="blank">한국특수교육총연합회</span></a></li>
+                                        <li><a href="#"><span class="blank">한국학원총연합회</span></a></li>
+                                        <li><a href="#"><span class="blank">교육부공무원노동조합</span></a></li>
+                                        <li><a href="#"><span class="blank">한국교육환경보호원</span></a></li>
+                                        <li><a href="#"><span class="blank">전국교직원노동조합</span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">시도교육청</a>
+                            <ul class="depth_2 close">
+                                <li>
+                                    <a href="#"><span class="blank">서울특별시교육청</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="blank">부산광역시교육청</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="blank">대구광역시교육청</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="blank">인천광역시교육청</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="blank">광주광역시교육청</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="blank">대전광역시교육청</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="blank">울산광역시교육청</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="blank">경기도교육청</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="blank">강원도교육청</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="blank">충청북도교육청</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="blank">충청남도교육청</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="blank">전라북도교육청</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="blank">전라남도교육청</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="blank">경상북도교육청</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="blank">경상남도교육청</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="blank">제주특별자치도교육청</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="blank">세종특별자치시교육청</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="sns">
+                        <ul class="cf">
+                            <li class="facebook"><a href="#">페이스북</a></li>
+                            <li class="twitter"><a href="#">트위터</a></li>
+                            <li class="youtube"><a href="#">유튜브</a></li>
+                            <li class="kakao"><a href="#">카카오스토리</a></li>
+                            <li class="blog"><a href="#">블로그</a></li>
+                            <li class="band"><a href="#">밴드</a></li>
+                            <li class="insta"><a href="#">인스타그램</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <div class="container">
+                <div class="banner">
+                    <ul>
+                        <li class="visual_0">
+                            <a href="#"><span><strong>코로나 19 예방접종 안내문<br/>청소년 예방접종 Q&A</strong></span></a>
+                        </li>
+                        <li class="visual_1">
+                            <a href="#"><span><strong>오미크론 대응 새 학기 <br/> 방역·학사운영 안내</strong></span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="news">
+                    <div class="news_bg">
+                        <div class="news_head cf">
+                            <h2 class="fl"><a href="#">사진 ∙ 영상뉴스</a></h2>
+                        </div>
+                        <div class="news_content">
+                            <ul class="news_board">
+                                <li class="slide1">
+                                    <a href="#">
+                                        <span class="picture"><img src="../images/main/photo_grid.png" alt="학부모 단체 간담회"></span>
+                                        <span class="title">학부모 단체 간담회</span>
+                                        <span class="date">2022-02-22</span>
+                                    </a>
+                                </li>
+                                <li class="slide2">
+                                    <a href="#">
+                                        <span class="picture"><img src="../images/main/photo_grid.png" alt="학교 방역인력지원 관련 간담회"></span>
+                                        <span class="title">학교 방역인력지원 관련 간담회</span>
+                                        <span class="date">2022-02-21</span>
+                                    </a>
+                                </li>
+                                <li class="slide3">
+                                    <a href="#">
+                                        <span class="picture"><img src="../images/main/photo_grid.png" alt="중대재해처벌법 시행 관련 현장 점검"></span>
+                                        <span class="title">중대재해처벌법 시행 관련 현장 점검</span>
+                                        <span class="date">2022-02-21</span>
+                                    </a>
+                                </li>
+                                <li class="slide4">
+                                    <a href="#">
+                                        <span class="picture"><img src="../images/main/photo_grid.png" alt="코로나19 소아청소년 지원방안 관련 간담회"></span>
+                                        <span class="title">코로나19 소아청소년 지원방안 관련 간담회</span>
+                                        <span class="date">2022-03-07</span>
+                                    </a>
+                                </li>
+                                <li class="slide5">
+                                    <a href="#">
+                                        <span class="picture"><img src="../images/main/photo_grid.png" alt="대학생 튜터링 사업 관련 교사 간담회"></span>
+                                        <span class="title">대학생 튜터링 사업 관련 교사 간담회</span>
+                                        <span class="date">2022-03-08</span>
+                                    </a>
+                                </li>
+                                <li class="slide6">
+                                    <a href="#">
+                                        <span class="picture"><img src="../images/main/photo_grid.png" alt="울진 산불 피해상황 긴급점검"></span>
+                                        <span class="title">울진 산불 피해상황 긴급점검</span>
+                                        <span class="date">2022-03-11</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="morebtn fr">
+                            <a href="#"><span>더보기 버튼</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_menu">
+                    <div class="main_content1_bg">
+                        <h2 class="content1_title"><span class="bluetext">주요 메뉴</span> 바로가기</h2>
+                        <ul class="content1_board">
+                            <li class="bg_blue"><a href="#">2022년 업무계획</a></li>
+                            <li class="bg_blue"><a href="#">코로나19<br />등교·원격수업</a></li>
+                            <li class="bg_blue"><a href="#">한국판뉴딜</a></li>
+                            <li><a href="#">유아교육</a></li>
+                            <li><a href="#">초·중·고 교육</a></li>
+                            <li><a href="#">대학(원)교육</a></li>
+                            <li><a href="#">감사정보</a></li>
+                            <li><a href="#">입법행정예고</a></li>
+                            <li><a href="#">표창대상자<br />공개검증
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="notice">
+                    <div class="content2_bg">
+                        <ul class="content2_title cf">
+                            <li class="fl">
+                                <input type="radio" id="content2_1" name="content2_1" checked>
+                                <label class="fl" for="content2_1">보도·설명·반박</label>
+                                <div class="content2_content fl cf">
+                                    <ul class="content2_content_box fl">
+                                        <li><a href="#">「스쿨미투 이후 교육분야 양성평등 정책 성과와 과제」토론회(포럼) 개최<span>2022-02-25</span></a></li>
+                                        <li><a href="#">학생·교직원용 유전자 증폭(PCR) 검사소 준비 상황 점검<span>2022-02-25</span></a></li>
+                                        <li><a href="#">현장 교원 간담회 주재<span>2022-02-24</span></a></li>
+                                        <li><a href="#">신속항원검사도구 준비현장 방문<span>2022-02-24</span></a></li>
+                                        <li><a href="#">정치관계법 개정에 따른 현장지원 주요 사항 안내<span>2022-02-24</span></a></li>
+                                        <li><a href="#">2022년 직업교육 혁신지구 사업 선정 결과 발표 및 성과공유회 개최<span>2022-02-24</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="more_btn fr">
+                                    <a href="#">더보기 버튼</a>
+                                </div>
+                            </li>
+                            <li class="fl">
+                                <input type="radio" id="content2_2" name="content2_1">
+                                <label class="fl" for="content2_2">공지사항</label>
+                                <div class="content2_content fl cf">
+                                    <ul class="content2_content_box fl">
+                                        <li><a href="#">2022년 정책연구과제("2022 개정 교육과정 총론 시안 개발 연구 등 총 2개 과제") 공모 안내<span>2022-02-18</span></a></li>
+                                        <li><a href="#">2022년 정책연구과제("2022 개정 초중학교 교육과정 운영 방안 연구") 공모 안내<span>2022-02-16</span></a></li>
+                                        <li><a href="#">교육부 홈페이지 및 영문 홈페이지 서버 점검 안내<span>2022-02-16</span></a></li>
+                                        <li><a href="#">2022년도 교육부 장관표창 계획 알림<span>2022-01-28</span></a></li>
+                                        <li><a href="#">[협조] (가칭)울산학생정신건강지원센터 정신건강전문가 공개 채용 공고<span>2022-01-17</span></a></li>
+                                        <li><a href="#">「교육시설의 안전·유지관리기준」 고시 알림<span>2022-01-14</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="more_btn fr">
+                                    <a href="#">더보기 버튼</a>
+                                </div>
+                            </li>
+                            <li class="fl">
+                                <input type="radio" id="content2_3" name="content2_1">
+                                <label class="fl" for="content2_3">채용공고</label>
+                                <div class="content2_content fl cf">
+                                    <ul class="content2_content_box fl">
+                                        <li><a href="#">교육부 일반임기제 7급(학생보건 관리) 공무원 채용 공고<span>2022-02-25</span></a></li>
+                                        <li><a href="#">목포대학교 국가공무원 전입 희망자 모집 공고<span>2022-02-23</span></a></li>
+                                        <li><a href="#">2022년 교육부 교육전문직원 선발 계획 공고<span>2022-02-23</span></a></li>
+                                        <li><a href="#">2022년도 제1회 진주교육대학교 국가공무원 전입 희망자 모집 공고<span>2022-02-22</span></a></li>
+                                        <li><a href="#">전주교육대학교 국가공무원(공업9급)경력경쟁채용시험 공고<span>2022-02-22</span></a></li>
+                                        <li><a href="#">교육부 일반임기제 전문경력관 나군(교육분야 양성평등 정책) 공무원 채용 서류전형 합격자발표 및 면접전형 일정 공고<span>2022-02-21</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="more_btn fr">
+                                    <a href="#">더보기 버튼</a>
+                                </div>
+                            </li>
+                            <li class="fl">
+                                <input type="radio" id="content2_4" name="content2_1">
+                                <label class="fl" for="content2_4">인사정보</label>
+                                <div class="content2_content fl cf">
+                                    <ul class="content2_content_box fl">
+                                        <li><a href="#">교육부 인사발령(3.1.자 등 일반직,교육전문직원)<span>2022-02-25</span></a></li>
+                                        <li><a href="#">교육부 인사발령(2.14.자 등)<span>2022-02-14</span></a></li>
+                                        <li><a href="#">교육부 인사발령(2.1.자 등)<span>2022-01-28</span></a></li>
+                                        <li><a href="#">교육부 인사발령(1.24.자)<span>2022-01-21</span></a></li>
+                                        <li><a href="#">교육부 인사발령(1.17.자 등)<span>2022-01-13</span></a></li>
+                                        <li><a href="#">교육부 인사발령(2022.1.1.자 등)<span>2021-12-28</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="more_btn fr">
+                                    <a href="#">더보기 버튼</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub_cont"></div>
+                <div class="sns_board"></div>
+                <div class="main_info"></div>
+                <div class="board"></div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
